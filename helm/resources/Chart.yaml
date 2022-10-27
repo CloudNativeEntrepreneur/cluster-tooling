@@ -1,4 +1,0 @@
-apiVersion: v1
-description: Cluster Resources
-name: cluster-resources
-version: "1.0.0"

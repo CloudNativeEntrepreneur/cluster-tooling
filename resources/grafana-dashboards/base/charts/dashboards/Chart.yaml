@@ -1,0 +1,7 @@
+apiVersion: v2
+name: dashboards
+description: Grafana Dashboards
+icon: https://avatars.githubusercontent.com/u/7195757
+version: 1.0.0
+appVersion: latest
+

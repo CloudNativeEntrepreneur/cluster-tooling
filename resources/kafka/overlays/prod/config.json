@@ -1,0 +1,10 @@
+{
+  "appName": "kafka",
+  "userGivenName": "kafka",
+  "destNamespace": "kafka",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/kafka/overlays/prod",
+  "srcRepoURL": "https://github.com/CloudNativeEntrepreneur/argocd-gitops-local-dev.git",
+  "srcTargetRevision": "",
+  "labels": null
+}

@@ -1,0 +1,10 @@
+{
+  "appName": "strimzi",
+  "userGivenName": "strimzi",
+  "destNamespace": "strimzi",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/strimzi/overlays/prod",
+  "srcRepoURL": "https://github.com/CloudNativeEntrepreneur/argocd-gitops-local-dev.git",
+  "srcTargetRevision": "",
+  "labels": null
+}

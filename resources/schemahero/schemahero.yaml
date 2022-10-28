@@ -3,7 +3,6 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.7.0
-  creationTimestamp: null
   name: migrations.schemas.schemahero.io
 spec:
   group: schemas.schemahero.io
@@ -110,7 +109,6 @@ status:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  creationTimestamp: null
   name: schemahero-role
 rules:
 - apiGroups:
@@ -266,7 +264,6 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  creationTimestamp: null
   name: schemahero-rolebinding
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -281,7 +278,6 @@ subjects:
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: null
   name: controller-manager-service
   namespace: schemahero-system
 spec:
@@ -297,7 +293,6 @@ status:
 apiVersion: v1
 kind: Secret
 metadata:
-  creationTimestamp: null
   name: webhook-server-secret
   namespace: schemahero-system
 
@@ -305,7 +300,6 @@ metadata:
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  creationTimestamp: null
   labels:
     control-plane: schemahero
   name: schemahero
@@ -317,7 +311,7 @@ spec:
   serviceName: ""
   template:
     metadata:
-      creationTimestamp: null
+  
       labels:
         control-plane: schemahero
     spec:
@@ -381,7 +375,6 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.7.0
-  creationTimestamp: null
   name: databases.databases.schemahero.io
 spec:
   group: databases.schemahero.io
@@ -2805,7 +2798,6 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.7.0
-  creationTimestamp: null
   name: tables.schemas.schemahero.io
 spec:
   group: schemas.schemahero.io

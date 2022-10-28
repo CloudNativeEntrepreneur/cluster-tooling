@@ -1,7 +1,8 @@
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: external-secrets-stores
+  name: knative-serving
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "1"
@@ -12,7 +13,7 @@ spec:
   source:
     repoURL: https://github.com/cloudnativeentrepreneur/cluster-tooling.git
     targetRevision: HEAD
-    path: resources/external-secrets-stores
+    path: resources/knative-serving
   destination:
     server: https://kubernetes.default.svc
     namespace: knative-serving

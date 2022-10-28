@@ -1,0 +1,25 @@
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: knative-eventing
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: {{ .Values.argocd.project }}
+  source:
+    repoURL: https://github.com/cloudnativeentrepreneur/cluster-tooling.git
+    targetRevision: HEAD
+    path: resources/knative-eventing
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: knative-eventing
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+      - CreateNamespace=true

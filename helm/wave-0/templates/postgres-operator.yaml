@@ -1,21 +1,22 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kyverno
+  name: postgres-operator
   namespace: argocd
 spec:
   destination:
-    namespace: kyverno
+    namespace: pgo
     server: https://kubernetes.default.svc
   project: {{ .Values.argocd.project }}
   source:
-    chart: kyverno
-    repoURL: https://kyverno.github.io/kyverno
-    targetRevision: 2.6.0
+    chart: postgres-operator
+    repoURL: https://opensource.zalando.com/postgres-operator/charts/postgres-operator/
+    targetRevision: 1.8.2
+    helm:
+      version: v3
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-      - Replace=true

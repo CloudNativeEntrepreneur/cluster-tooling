@@ -17,11 +17,10 @@ spec:
     server: https://kubernetes.default.svc
     namespace: schemahero-system
   ignoreDifferences:
-  - group: "apps"
-    kind: "StatefulSet"
+  - group: apps
+    kind: StatefulSet
     jsonPointers:
-    - /status/replicas
-    - /status/availableReplicas
+    - /status
   syncPolicy:
     automated:
       selfHeal: true

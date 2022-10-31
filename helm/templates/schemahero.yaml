@@ -20,8 +20,8 @@ spec:
   - group: "apps"
     kind: "StatefulSet"
     jsonPointers:
-    - /spec/replicas
-    - /spec/availableReplicas
+    - /status/replicas
+    - /status/availableReplicas
   syncPolicy:
     automated:
       selfHeal: true

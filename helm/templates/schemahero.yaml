@@ -16,6 +16,12 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: schemahero-system
+  ignoreDifferences:
+  - group: "apps"
+    kind: "StatefulSet"
+    jsonPointers:
+    - /spec/replicas
+    - /spec/availableReplicas
   syncPolicy:
     automated:
       selfHeal: true

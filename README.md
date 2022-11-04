@@ -48,7 +48,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: local-cluster-tooling
+  project: cluster-tooling
   source:
     repoURL: https://github.com/cloudnativeentrepreneur/cluster-tooling.git
     targetRevision: HEAD

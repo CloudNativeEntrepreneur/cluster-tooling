@@ -1,11 +1,5 @@
 # Cluster Tooling
 
-## ArgoCD Waves
-
-ArgoCD, on a fresh install, will install applications in "Waves".
-
-This enables you to install things, that for example, create CRDs, that are used by other application, first.
-
 ## Install
 
 Create the following resource in your argocd autopilot's `/projects` directory
@@ -23,7 +17,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  description: Cluster Tooling wave 0 (things that create CRDs needed it later waves)
+  description: Cluster tooling
   sourceRepos:
   - '*'
   destinations:

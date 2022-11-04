@@ -53,6 +53,8 @@ spec:
     repoURL: https://github.com/cloudnativeentrepreneur/cluster-tooling.git
     targetRevision: HEAD
     path: helm
+    helm:
+      version: v3
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

@@ -16,7 +16,7 @@ Create the following resource in your argocd autopilot's `/projects` directory
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: local-cluster-tooling
+  name: cluster-tooling
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
@@ -41,7 +41,7 @@ spec:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: local-cluster-tooling
+  name: cluster-tooling
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "-1"

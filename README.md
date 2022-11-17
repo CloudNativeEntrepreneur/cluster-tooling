@@ -57,3 +57,7 @@ spec:
       selfHeal: true
       prune: true
 ```
+
+## Observability
+
+Observability related tools can be found in the [Observability](https://github.com/CloudNativeEntrepreneur/observability) project.

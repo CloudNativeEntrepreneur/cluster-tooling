@@ -1,4 +1,4 @@
 apiVersion: v1
 description: Cluster Tooling
 name: cluster-tooling
-version: "1.0.0"
+version: "v0.7.3"

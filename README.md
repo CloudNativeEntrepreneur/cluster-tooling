@@ -77,3 +77,5 @@ Installs Operator, and then Knative Serving and Eventing. Eventing is configured
 Decalarative SQL DBs
 
 ### Schemahero
+
+Declarative SQL Schemas

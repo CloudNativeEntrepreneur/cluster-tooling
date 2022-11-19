@@ -69,5 +69,8 @@ Observability related tools can be found in the [Observability](https://github.c
 Use fake secret store only for running the demo application and for development. Do not use in production!
 
 ### KNative Operator, Serving, and Eventing
+
+Installs Operator, and then Knative Serving and Eventing. Eventing is configured with in-memory channels.
+
 ### Zalando Postgres Operator
 ### Schemahero

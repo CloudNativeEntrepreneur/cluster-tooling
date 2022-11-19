@@ -65,6 +65,9 @@ Observability related tools can be found in the [Observability](https://github.c
 ## Included
 
 ### External Secrets and Fake Secret Store
+
+Use fake secret store only for running the demo application and for development. Do not use in production!
+
 ### KNative Operator, Serving, and Eventing
 ### Zalando Postgres Operator
 ### Schemahero

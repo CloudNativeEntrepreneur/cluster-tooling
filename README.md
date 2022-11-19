@@ -73,4 +73,7 @@ Use fake secret store only for running the demo application and for development.
 Installs Operator, and then Knative Serving and Eventing. Eventing is configured with in-memory channels.
 
 ### Zalando Postgres Operator
+
+Decalarative SQL DBs
+
 ### Schemahero

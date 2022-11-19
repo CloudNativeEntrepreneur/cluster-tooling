@@ -61,3 +61,10 @@ spec:
 ## Observability
 
 Observability related tools can be found in the [Observability](https://github.com/CloudNativeEntrepreneur/observability) project.
+
+## Included
+
+### External Secrets and Fake Secret Store
+### KNative Operator, Serving, and Eventing
+### Zalando Postgres Operator
+### Schemahero

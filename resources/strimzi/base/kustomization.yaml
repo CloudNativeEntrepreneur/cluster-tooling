@@ -5,6 +5,6 @@ helmCharts:
 - name: strimzi-kafka-operator
   includeCRDs: true
   releaseName: strimzi
-  version: 0.30.0
+  version: 0.40.0
   repo: https://strimzi.io/charts/
   namespace: strimzi

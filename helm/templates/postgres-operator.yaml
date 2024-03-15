@@ -13,7 +13,7 @@ spec:
   source:
     chart: postgres-operator
     repoURL: https://opensource.zalando.com/postgres-operator/charts/postgres-operator/
-    targetRevision: 1.8.2
+    targetRevision: 1.11.0
     helm:
       version: v3
   syncPolicy:
